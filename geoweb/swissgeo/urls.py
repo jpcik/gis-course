@@ -9,5 +9,4 @@ urlpatterns = [
     path('cantons', views.cantons, name='cantons'),
     path('cantonsdata', views.cantonsdata, name='cantonsdata'),
     path('cantons/<str:canton_name>', views.canton, name='canton'),
-
 ]
