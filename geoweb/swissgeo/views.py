@@ -39,10 +39,7 @@ def canton(request,canton_name):
 #    return HttpResponse(cantons[1].geom.wkt)
 
 def cantons(request):
-  
-    context ={
-    }
-    
+    context ={  }
     return render(request,'swissgeo/cantons.html',context)
 
 def cantonsdata(request):
