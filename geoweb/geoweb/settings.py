@@ -25,7 +25,9 @@ SECRET_KEY = '+hlk%0w01r3z7tn4fw)1)2f0swov9=_6lp18^y&nkq$0t!v*_k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+# allowed hosts '*' only for test purposes
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -84,7 +86,7 @@ DATABASES = {
         'NAME': 'testGIS',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
+        'HOST': 'db',
         'PORT': '5432',
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
