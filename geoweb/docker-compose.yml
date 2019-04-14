@@ -15,7 +15,8 @@ services:
 
   web:
     #build: .
-    image: geoweb_web
+    #image: geoweb_web
+		image: jpcik/geoweb
     command: ./manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
